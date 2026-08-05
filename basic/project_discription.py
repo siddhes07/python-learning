@@ -1,0 +1,6 @@
+project = int(input("Enter the project number: "))
+name = input("Enter the project name: ")
+group = input("Enter the group name: ")
+print("Project Number:", project)
+print("Project Name:", name)
+print("Group Name:", group)
