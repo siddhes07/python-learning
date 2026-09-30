@@ -1,0 +1,21 @@
+def isValid(s):
+    stack = []
+
+    for char in s:
+        if char == '(':
+            stack.append(')')
+        elif char == '[':
+            stack.append(']')
+        elif char == '{':
+            stack.append('}')
+        elif not stack or stack.pop() != char:
+            return False
+
+    return len(stack) == 0
+
+
+# User input
+s = input("Enter brackets: ")
+
+# Output
+print(isValid(s))
